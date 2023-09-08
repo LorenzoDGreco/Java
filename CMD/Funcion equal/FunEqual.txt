@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class FunEqual 
+{
+  public static void main(String args[])
+  {
+   Scanner Tecla = new Scanner (Scanner.in);
+   String nombre1= "", nombre2= "";
+
+   System.out.print("Porfavor ingresa el nombre del usuario: ");
+   Nombre1= Tecla.nextLine();
+
+   System.out.print("Porfavor ingresa el segundo nombre del usuario: ");
+   Nombre2= Tecla.nextLine();
+
+   System.out.println("");
+
+   System.out.println("NO ignora las mayusculas");
+
+   if(Nombre1.equals(Nombre2))
+   {
+    System.out.println("Los 2 nombres ingresados son iguales.");
+   }
+   else
+   {
+    System.out.println("Los 2 nombres ingresados son distintas.");
+   }
+
+   System.out.println("Ignora las mayusculas");
+
+   if(Nombre1.equalsIgnoreCase(Nombre2))
+   {
+    System.out.println("Los 2 nombres ingresados son iguales.");
+   }
+   else
+   {
+    System.out.println("Los 2 nombres ingresados son distintas.");
+   }
+  }
+}
